@@ -1,0 +1,24 @@
+{
+  "compilerVersion": "./node_modules/solc",
+  "outputType": "all",
+  "compilerAllowedPaths": ["../Botdex-core"],  
+  "compilerOptions": {
+    "outputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "abi",
+          "evm.sourceMap",
+          "evm.deployedSourceMap",
+          "metadata"
+        ],
+        "": ["ast"]
+      }
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 9999999
+    }
+  }
+}
