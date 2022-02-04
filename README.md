@@ -1,9 +1,5 @@
-# Botdex Router
-[![Actions Status](https://github.com/Rock-n-Block/BotdexSwap-periphery/workflows/CI/badge.svg)](https://github.com/Rock-n-Block/BotdexSwap-periphery/actions)
-
 Deployed on bscTestnet:
-[0x5B0E40BAaeA177dE904Fb72F831150a281EE3d87](https://testnet.bscscan.com/address/0x5B0E40BAaeA177dE904Fb72F831150a281EE3d87#code)
-
+https://testnet.bscscan.com/address/0xb05241134B0974bE957fc56efD6b51dFFb3E74db#code
 
 ### Bsc-Test
 

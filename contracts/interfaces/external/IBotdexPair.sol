@@ -1,8 +1,6 @@
 pragma solidity >=0.5.0;
-
-import './IBotdexERC20.sol';
-
-interface IBotdexPair is IBotdexERC20 {
+pragma abicoder v1;
+interface IBotdexPair {
     event Mint(address indexed sender, uint amount0, uint amount1);
     event Burn(address indexed sender, uint amount0, uint amount1, address indexed to);
     event Swap(
@@ -15,7 +13,6 @@ interface IBotdexPair is IBotdexERC20 {
     );
     event Sync(uint112 reserve0, uint112 reserve1);
 
-    function initialize(address _token0, address _token1) external;
     function MINIMUM_LIQUIDITY() external pure returns (uint);
     function factory() external view returns (address);
     function token0() external view returns (address);

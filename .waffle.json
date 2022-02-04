@@ -1,7 +1,6 @@
 {
   "compilerVersion": "./node_modules/solc",
   "outputType": "all",
-  "compilerAllowedPaths": ["../Botdex-core"],  
   "compilerOptions": {
     "outputSelection": {
       "*": {
@@ -16,9 +15,10 @@
         "": ["ast"]
       }
     },
+    "evmVersion": "istanbul",
     "optimizer": {
       "enabled": true,
-      "runs": 9999999
+      "runs": 999999
     }
   }
 }

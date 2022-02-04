@@ -26,7 +26,7 @@ contract ExampleFlashSwap is IBotdexCallee {
     receive() external payable {}
 
     // gets tokens/WETH via a V2 flash swap, swaps for the ETH/tokens on V1, repays V2, and keeps the rest!
-    function BotdexCall(address sender, uint amount0, uint amount1, bytes calldata data) external override {
+    function botdexCall(address sender, uint amount0, uint amount1, bytes calldata data) external override {
         address[] memory path = new address[](2);
         uint amountToken;
         uint amountETH;

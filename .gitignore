@@ -1,4 +1,7 @@
 build/
 node_modules/
 .env
+artifacts/
+package-lock.json
+cache/
 yarn.lock

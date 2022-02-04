@@ -5,8 +5,8 @@ import { deployContract } from 'ethereum-waffle'
 
 import { expandTo18Decimals } from './utilities'
 
-import BotdexFactory from '../../../Botdex-core/build/BotdexFactory.json'
-import IBotdexPair from '../../../Botdex-core/build/IBotdexPair.json'
+import BotdexFactory from '../../external/build/BotdexFactory.json'
+import IBotdexPair from '../../external/build/IBotdexPair.json'
 
 import ERC20 from '../../build/ERC20.json'
 import WETH9 from '../../build/WETH9.json'
@@ -18,8 +18,8 @@ import BotdexRouter from '../../build/BotdexRouter.json'
 import RouterEventEmitter from '../../build/RouterEventEmitter.json'
 
 
-import { bytecode } from '../../../Botdex-core/build/BotdexPair.json'
-import { keccak256 } from '@ethersproject/solidity'
+// import { bytecode } from '../../external/build/BotdexPair.json'
+// import { keccak256 } from '@ethersproject/solidity'
 
 
 
@@ -88,7 +88,7 @@ export async function v2Fixture( [wallet]: Wallet[], provider: Web3Provider): Pr
   await factoryV2.createPair(WETH.address, WETHPartner.address)
   const WETHPairAddress = await factoryV2.getPair(WETH.address, WETHPartner.address)
   const WETHPair = new Contract(WETHPairAddress, JSON.stringify(IBotdexPair.abi), provider).connect(wallet)
-
+  console.log(WETHPair)
   return {
     token0,
     token1,

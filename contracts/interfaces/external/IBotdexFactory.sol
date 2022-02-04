@@ -1,5 +1,5 @@
 pragma solidity >=0.5.0;
-
+pragma abicoder v1;
 interface IBotdexFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 

@@ -1,5 +1,5 @@
 {
-  "name": "Botdexswap-peripheral",
+  "name": "botdex-periphery",
   "version": "1.0.0",
   "description": "🎚 Peripheral smart contracts for interacting with Botdex",
   "engines": {
@@ -8,7 +8,7 @@
   "homepage": "https://Botdexswap.finance",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Botdexswap/Botdex-swap-periphery.git"
+    "url": "https://github.com/Rock-n-Block/Botdex-contracts/tree/master/Botdex-periphery"
   },
   "files": [
     "build",

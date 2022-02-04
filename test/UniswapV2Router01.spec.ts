@@ -367,7 +367,7 @@ describe('UniswapV2Router{01,02}', () => {
             overrides
           )
           const receipt = await tx.wait()
-          const gasExpectations = routerVersion == "UniswapV2Router01" ? 102175 : 101964;
+          const gasExpectations = routerVersion == "UniswapV2Router01" ? 101447 : 101236;
           expect(receipt.gasUsed).to.eq(gasExpectations)
         }).retries(3)
       })
@@ -511,7 +511,7 @@ describe('UniswapV2Router{01,02}', () => {
             }
           )
           const receipt = await tx.wait()
-          const gasExpectations = routerVersion == "UniswapV2Router01" ? 110608 : 110311;
+          const gasExpectations = routerVersion == "UniswapV2Router01" ? 109152 : 108855;
           expect(receipt.gasUsed).to.eq(gasExpectations)
         }).retries(3)
       })

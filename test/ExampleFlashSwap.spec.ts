@@ -50,7 +50,7 @@ describe('ExampleFlashSwap', () => {
     )
   })
 
-  it('uniswapV2Call:0', async () => {
+  it.only('uniswapV2Call:0', async () => {
     // add liquidity to V1 at a rate of 1 ETH / 200 X
     const WETHPartnerAmountV1 = expandTo18Decimals(2000)
     const ETHAmountV1 = expandTo18Decimals(10)
@@ -79,6 +79,7 @@ describe('ExampleFlashSwap', () => {
     const WETHPairToken0 = await WETHPair.token0()
     const amount0 = WETHPairToken0 === WETHPartner.address ? bigNumberify(0) : arbitrageAmount
     const amount1 = WETHPairToken0 === WETHPartner.address ? arbitrageAmount : bigNumberify(0)
+    console.log("'''''''''''''''''''")
     await WETHPair.swap(
       amount0,
       amount1,
